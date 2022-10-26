@@ -31,7 +31,7 @@ streamBuffer = [100, 200, 300, 400, 500]
 
 for distance in streamBuffer:
 
-    #Set output feature class (FC) name and store in Data folder:
+    #Set output feature class (FC) name and store in Scratch folder:
     outputFC = "V:\\_ProblemSets\\ENV859_PS4_ans98\\Scratch\\buff_"+str(distance)+"m.shp"   
 
     #Create feature class with buffered streams:

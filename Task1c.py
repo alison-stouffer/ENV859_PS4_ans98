@@ -23,7 +23,7 @@ arcpy.env.overwriteOutput = True
 
 #Set input feature class (FC) to streams shapefile in Data folder:
 inputFC = "streams.shp"
-#Set output feature class (FC) name through user input and store in Data folder:
+#Set output feature class (FC) name through user input and store in Scratch folder:
 outputFC = sys.argv[2]
 
 #%% Create Buffer From User Input
