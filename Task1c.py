@@ -1,7 +1,7 @@
 ##---------------------------------------------------------------------
 ## Interactive Python Script for Buffering
 ##
-## Description: Create 1,000 meter buffer from streams.
+## Description: Create stream buffer from user input.
 ##
 ##
 ## Created: Fall 2020
@@ -26,7 +26,7 @@ inputFC = "streams.shp"
 #Set output feature class (FC) name to StrmBuff1km and store in Data folder:
 outputFC = sys.argv[2]
 
-#%%Create Buffer
+#%%Create Buffer From User Input
 
 #Set buffer distance:
 streamBuffer = sys.argv[1]
