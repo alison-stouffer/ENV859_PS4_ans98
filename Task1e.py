@@ -31,11 +31,11 @@ streamBuffer = [100, 200, 300, 400, 500]
 
 for distance in streamBuffer:
 
-     #Set output feature class (FC) name and store in Data folder:
-     outputFC = "V:\\_ProblemSets\\ENV859_PS4_ans98\\Scratch\\buff_"+streamBuffer[distance]+"m.shp"   
+    #Set output feature class (FC) name and store in Data folder:
+    outputFC = "V:\\_ProblemSets\\ENV859_PS4_ans98\\Scratch\\buff_"+str(distance)+"m.shp"   
 
     #Create feature class with buffered streams:
-    arcpy.Buffer_analysis(inputFC,outputFC,streamBuffer[distance],'','','ALL')
+    arcpy.Buffer_analysis(inputFC,outputFC,distance,'','','ALL')
 
 #%%Display Messages
 
