@@ -28,7 +28,7 @@ streamBuffer = sys.argv[1]
 
 #Set input feature class (FC) to streams shapefile in Data folder:
 inputFC = "streams.shp"
-#Set output feature class (FC) name to StrmBuff1km and store in Data folder:
+#Set output feature class (FC) name and store in Data folder:
 outputFC = "V:\\_ProblemSets\\ENV859_PS4_ans98\\Scratch\\buff_"+streamBuffer+"m.shp"
 
 #%%Create Buffer
