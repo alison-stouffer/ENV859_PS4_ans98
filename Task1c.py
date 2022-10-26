@@ -19,21 +19,21 @@ arcpy.env.workspace = "V:\\_ProblemSets\\ENV859_PS4_ans98\\Data"
 #Allow output to be overwritten:
 arcpy.env.overwriteOutput = True
 
-#%%Set Input and Output Feature Classes
+#%% Set Input and Output Feature Classes
 
 #Set input feature class (FC) to streams shapefile in Data folder:
 inputFC = "streams.shp"
-#Set output feature class (FC) name to StrmBuff1km and store in Data folder:
+#Set output feature class (FC) name through user input and store in Data folder:
 outputFC = sys.argv[2]
 
-#%%Create Buffer From User Input
+#%% Create Buffer From User Input
 
-#Set buffer distance:
+#Set buffer distance through user input:
 streamBuffer = sys.argv[1]
 
 #Create feature class with buffered streams:
 arcpy.Buffer_analysis(inputFC,outputFC,streamBuffer,'','','ALL')
 
-#%%Display Messages
+#%% Display Messages
 
 print(arcpy.GetMessages())
