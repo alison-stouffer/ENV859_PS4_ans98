@@ -29,4 +29,9 @@ else:
 #Allow output to be overwritten:
 arcpy.env.overwriteOutput = True
 
-#%%
+#%% Set Input Feature Classes
+
+#Create feature class listing 5 BMR feature classes:
+BMR_FC = arcpy.ListFeatureClasses(wild_card="BMR*")
+#Create variable for TriCounties feature class:
+Counties_FC = "TriCounties.shp"
