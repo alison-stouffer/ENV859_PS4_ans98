@@ -35,3 +35,11 @@ arcpy.env.overwriteOutput = True
 BMR_FC = arcpy.ListFeatureClasses(wild_card="BMR*")
 #Create variable for TriCounties feature class:
 Counties_FC = "TriCounties.shp"
+
+#%% Iterate Through Splitting BMR Feature Classes
+
+for BMR in BMR_FC:
+    #Create folders in Scratch folder for new feature classes:
+    output_WS = arcpy.CreateFolder_management("V:\\_ProblemSets\\ENV859_PS4_ans98\\Scratch", BMR[:-4])
+    #Split current BMR feature classes by county:
+    arcpy.analysis.Split(BMR, Counties_FC, "CO_Name", output_WS)
