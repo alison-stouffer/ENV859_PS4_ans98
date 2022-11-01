@@ -29,14 +29,14 @@ describe = arcpy.da.Describe(dataset)
 #%% ArcGIS Messages
 
 #Print dataset path:
-print(describe["catalogPath"])
+arcpy.AddMessage(describe["catalogPath"])
 
 #Print extent of dataset:
 extent = describe["extent"]
-print("XMin: " + str(round(extent.XMin, 1)))
-print("YMin: " + str(round(extent.YMin, 1)))
-print("XMax: " + str(round(extent.XMax, 1)))
-print("YMax: " + str(round(extent.YMax, 1)))
+arcpy.AddMessage("XMin: " + str(round(extent.XMin, 1)))
+arcpy.AddMessage("YMin: " + str(round(extent.YMin, 1)))
+arcpy.AddMessage("XMax: " + str(round(extent.XMax, 1)))
+arcpy.AddMessage("YMax: " + str(round(extent.YMax, 1)))
 
 #Check data type:
 datasetType = describe["dataType"]
