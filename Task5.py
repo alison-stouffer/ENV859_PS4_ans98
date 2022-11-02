@@ -42,7 +42,7 @@ for row in rows:
     if point.within(recShape):
         fieldValue = row[1]
         #Print the user-specified field value:
-        print("The " + field + "is " + fieldValue)
+        print("The " + field + " is " + fieldValue)
         
     
 
