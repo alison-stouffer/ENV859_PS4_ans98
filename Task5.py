@@ -43,6 +43,5 @@ for row in rows:
         fieldValue = row[1]
         #Print the user-specified field value:
         print("The " + field + " is " + fieldValue)
-        
-    
-
+    else:
+        continue
