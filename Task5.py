@@ -19,3 +19,15 @@ arcpy.env.workspace = "V:\\_ProblemSets\\ENV859_PS4_ans98\\Data"
 #Allow output to be overwritten:
 arcpy.env.overwriteOutput = True
 
+#%% Set User Inputs
+
+featureClass = sys.argv[1]
+field = sys.argv[2]
+
+#%% Create Point
+
+point = arcpy.Point()
+point.X = 587000
+point.Y = 265000
+
+#%%
